@@ -28,11 +28,7 @@ function setLightbar() {
     let blue = settings.lightbar.blue;
     let green = settings.lightbar.green;
 
-    console.log('\nApplying ' + chalk.rgb(red, green, blue)('RGB(%s, %s, %s) ') + 'to the first device...\n',
-        red,
-        green,
-        blue,
-    )
+    console.log('\nApplying ' + chalk.rgb(red, green, blue)('RGB(%s, %s, %s) ') + 'to the first device...\n', red, green, blue);
 
     gamepad.setLed(red, green, blue);
 
