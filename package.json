@@ -1,0 +1,25 @@
+{
+  "name": "ds4-lightbar",
+  "version": "1.0.0",
+  "description": "A small application to control the lightbar of the Dualshock 4.",
+  "main": "lightbar.js",
+  "scripts": {
+    "start": "node ./source/lightbar.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrasileiroGamer/ds4-lightbar.git"
+  },
+  "keywords": [
+    "dualshock4",
+    "controller",
+    "lightbar"
+  ],
+  "author": "Lucas Cota",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/BrasileiroGamer/ds4-lightbar#readme",
+  "dependencies": {
+    "dualshock": "^3.1.4"
+  }
+}
