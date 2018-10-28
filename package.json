@@ -20,6 +20,7 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/BrasileiroGamer/ds4-lightbar#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "dualshock": "^3.1.4"
   }
 }

@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const settings = require('./settings');
 const dualshock = require('dualshock');
 
@@ -23,17 +24,17 @@ function setLightbar() {
 
     let gamepad = dualshock.open(getDevices()[0]);
 
-    console.log('\nApplying RGB(%s, %s, %s) to the first device...\n',
-        settings.lightbar.red,
-        settings.lightbar.green,
-        settings.lightbar.blue,
-    );
+    let red = settings.lightbar.red;
+    let blue = settings.lightbar.blue;
+    let green = settings.lightbar.green;
 
-    gamepad.setLed(
-        settings.lightbar.red,
-        settings.lightbar.green,
-        settings.lightbar.blue
-    );
+    console.log('\nApplying ' + chalk.rgb(red, green, blue)('RGB(%s, %s, %s) ') + 'to the first device...\n',
+        red,
+        green,
+        blue,
+    )
+
+    gamepad.setLed(red, green, blue);
 
     console.log('Lightbar color applied successfully!');
 }
