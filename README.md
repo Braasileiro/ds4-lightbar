@@ -12,4 +12,3 @@ To apply the lightbar color, plug the controller and run:
 ```
 node lightbar.js
 ```
-You are free to modify the program as much as you want, as it is just a basic prototype. But do not forget to keep the credits!
